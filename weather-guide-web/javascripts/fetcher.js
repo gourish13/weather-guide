@@ -1,16 +1,25 @@
 const apiKey = "656fc6ced8b49f7b5d51f8e68d78e400"
+var weatherData = {}
 
 function weatherFetch(cityName) {
-        let weatherData;
-        fetch(`api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
+        // fetch(`api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
+        fetch(`https:\/\/cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
                 .then(function(res) {
                         return res.json();
                 })
                 .then(function(data) {
-                        weatherData = data;
+                        storeData(data);                
                 })
-                .catch(function() {
+                .catch(function(err) {
                         console.log("Error in fetching weather data.")
+                        console.log(err);
                 })
-        return weatherData
+        console.log(weatherData)
+        // return weatherData
 }
+
+function storeData(data) {
+        console.log(data)
+        weatherData = data
+        console.log(weatherData)
+} 

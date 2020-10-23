@@ -8,10 +8,13 @@
 
         </head>
 
-        <body>
+        <body onload="showFetchedData()">
                 <script src="./javascripts/fetcher.js"></script>
                 <script>
-                        console.log(weatherFetch('Asansol')) 
+                         function showFetchedData() {  
+                                 weatherFetch('Asansol')
+                                 console.log(weatherData) 
+                         }
                 </script>
       
 
