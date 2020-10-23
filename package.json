@@ -1,0 +1,25 @@
+{
+  "name": "weather-guide",
+  "version": "1.0.0",
+  "description": "A simple weather forecasting app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gourish13/weather-guide.git"
+  },
+  "author": "Gourish Sadhu\\sadhu5gourish@outlook.com",
+  "contributor": "Prasad Biswas\\???",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gourish13/weather-guide/issues"
+  },
+  "homepage": "https://github.com/gourish13/weather-guide#readme",
+  "devDependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
