@@ -1,4 +1,4 @@
-const apiKey = ""
+const apiKey = "656fc6ced8b49f7b5d51f8e68d78e400"
 
 function weatherFetch(cityName) {
         let weatherData;
