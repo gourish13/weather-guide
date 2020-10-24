@@ -3,5 +3,8 @@ function toCelcius(tempInKelvin) {
 }
 
 function toFahrenheit(tempInKelvin) {
-// Remove the comment and write the code here.
+
+    let a = toCelcius(tempInKelvin)
+    return ((a * (9 / 5)) + 32)
+
 }
