@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang='en'>
+        <head>
+		<meta charset="utf-8">
+    	        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+                <title>Weather</title>
+		
+		<!-- Bootstrap -->
+                <link rel = "stylesheet" href = "../node_modules/bootstrap/dist/css/bootstrap.min.css">
+                <script src = "../node_modules/jquery/dist/jquery.slim.min.js"></script>
+                <script src = "../node_modules/popper.js/dist/umd/popper.min.js"></script>
+                <script src = "../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- /Bootstrap -->
+		
+                <link rel = "stylesheet" href = "./styles/index.css">
+
+        </head>
+
+        <body> 
+                <script src="./javascripts/fetcher.js"></script>
+           <!-- <script>
+                         function showFetchedData() {  
+                              //   weatherFetch('Asansol')
+                         }
+                </script> -->
+
+                <script src = "./javascripts/tempconverter.js"></script>
+                <script src = "./javascripts/weathercard.js"></script>
+
+                <center><h1 class = "heading">☀⛅🌁WEATHER GUIDE☔❄🌙</h1></center>
+
+                <input id = "searchBar"></input>
+                <button id = "searchButton">ADD</button>
+
+
+                <!--ROUNDED TOGGLE-->
+                <div class = "custom-control custom-switch">
+
+                        <input type = "checkbox" class = "custom-control-input" id = "customSwitches">
+                        <label class = "custom-control-label" for = "customSwitches">&#176C &nbsp; / &nbsp; &#176F</label>
+
+                </div>
+
+
+                <div class = "container-fluid">
+                <div class = "row">
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                                
+                                <div class = "card" style = "width: 90%; height: 95%; margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>        
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+                        
+
+                </div>
+                </div>
+
+                <div class = "container-fluid">
+                <div class = "row" style = "margin-top: 1.5%">
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                                
+                                <div class = "card" style = "width: 90%; height: 95%; margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>        
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+
+                        <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
+                        
+                                <div class = "card" style = "width: 90%; height: 95%;  margin-top: 1.5%; margin-left: 5%;">
+                                
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+
+                                        <div class = "card-body">
+
+                                                <h5 class = "card-title">London</h5>
+                                                <p class = "card-text">12&#176;C</p>
+                                                <a href = "#" class = "btn btn-primary">Details</a>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+                        
+
+                </div>
+                </div>
+
+        </body>
+
+</html>
+
