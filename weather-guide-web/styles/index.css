@@ -1,3 +1,26 @@
 body {
         background-color : blueviolet;
 }
+
+h1{
+
+        margin-left: 33%;
+        font-size: 80px;
+	font-family: monospace;
+	text-shadow: 5px 5px red;
+
+}
+
+#searchBar{
+
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: blueviolet;
+        border-bottom: 3px solid orangered;
+        color: white;
+        font-weight: bolder;
+        width: 35%;
+        margin-left: 30%; 
+
+}
