@@ -2,16 +2,29 @@ body {
         background-color : blueviolet;
 }
 
-h1{
-
-        margin-left: 33%;
-        font-size: 80px;
+#heading-text {
+    font-size: 6vw;
 	font-family: monospace;
 	text-shadow: 3px 3px red;
-
 }
 
-#searchBar{
+h1 {
+	font-size: 6vw;
+}
+
+
+/*.btn.btn-primary {
+	font-size: 20px;
+	font-weight: bolder;
+}
+*/
+
+#unit {
+	margin-left: 5vw;
+	display: none;
+}
+
+#searchBar {
 
         border-top: 0;
         border-right: 0;
@@ -21,7 +34,43 @@ h1{
         color: white;
         font-weight: bolder;
         width: 35%;
-        margin-left: 30%; 
-        margin-top: 3%;
+        margin-left: 5%;
+        height: 40px;
+        border-radius: 13px;
+        box-shadow: 0 0 15px 1px purple ;
+        padding-inline-start: 6px;
+        font-size: 25px;
+}
 
+.btn.btn-danger {
+	margin-right: 3vw;
+	margin: 2vw;
+	border-radius: 20px;
+	border: 6px;
+	font-weight: bolder;
+	box-shadow: 0 0 2px 2px royalblue;
+	text-decoration-color: white
+}
+
+.btn.btn-danger:hover {
+	margin-right: 3vw;
+	margin: 2vw;
+	border-radius: 20px;
+	border: 6px;
+	font-weight: bolder;
+	background-color: darkcyan;
+	box-shadow: 0 0 2px 2px red;
+	text-decoration-color: white
+}
+
+.card {
+	width: 90%; 
+	height: 95%; 
+	margin-top: 1.5%; 
+	margin-left: 5%
+}
+
+.card-img-top {
+	width: 39% ;
+	margin-left: 29%;
 }

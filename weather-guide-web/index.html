@@ -12,6 +12,11 @@
                 <script src = "../node_modules/popper.js/dist/umd/popper.min.js"></script>
                 <script src = "../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- /Bootstrap -->
+
+		<!-- Bootstrap-toggle -->
+        		<link href="../node_modules/bootstrap4-toggle/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        		<script src="../node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
+        <!-- /Bootstrap-toggle -->
 		
                 <link rel = "stylesheet" href = "./styles/index.css">
 
@@ -28,19 +33,21 @@
                 <script src = "./javascripts/tempconverter.js"></script>
                 <script src = "./javascripts/weathercard.js"></script>
 
-                <h1 class = "heading">WEATHER GUIDE</h1>
 
-                <input id = "searchBar"></input>
-                <button id = "searchButton">ADD</button>
+                <center><h1>☀⛅🌁<span id = "heading-text">WEATHER GUIDE</span>☔❄🌙</h1></center>
+
+                <input placeholder="City Name[,Country Code]" id = "searchBar"></input>
+                <button class = "btn btn-danger" id = "searchButton">ADD CITY</button>
+                <input id = "unit" type = "checkbox" checked data-toggle = "toggle" data-on = "Celcius" data-off = "Fahrenheit" data-onstyle = "success" data-offstyle = "success">
 
 
                 <!--ROUNDED TOGGLE-->
-                <div class = "custom-control custom-switch">
+               <!--  <div class = "custom-control custom-switch">
 
                         <input type = "checkbox" class = "custom-control-input" id = "customSwitches">
                         <label class = "custom-control-label" for = "customSwitches">&#176C &nbsp; / &nbsp; &#176F</label>
 
-                </div>
+                </div> -->
 
 
                 <div class = "container-fluid">
@@ -48,9 +55,9 @@
 
                         <div class = "col-sm-3" style = "background-color: blueviolet; text-align: center">
                                 
-                                <div class = "card" style = "width: 90%; height: 95%; margin-top: 1.5%; margin-left: 5%;">
+                                <div class = "card"><!--  style = "width: 90%; height: 95%; margin-top: 1.5%; margin-left: 5%;"> -->
                                 
-                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap" style = "width: 39% ; margin-left: 29%">
+                                        <img class = "card-img-top" src = "./icons/01d.png" alt = "Card image cap"><!--  style = "width: 39% ; margin-left: 29%"> -->
 
                                         <div class = "card-body">
 
