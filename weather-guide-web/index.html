@@ -22,9 +22,9 @@
 
         </head>
 
-        <body> 
+        <body onload = "init()"> 
                 <script src="./javascripts/fetcher.js"></script>
-           <!-- <script>
+                <!-- <script>
                          function showFetchedData() {  
                               //   weatherFetch('Asansol')
                          }
@@ -221,6 +221,13 @@
                 </div>
                 </div>
                 <script>
+                        function init(){
+
+                                // document.getElementById('color-mode').href = './styles/' + localstorage.mode;
+                                changeColorMode();
+
+                        }
+                        
                         function changeColorMode() {
                                 let colorMode = document.getElementById('modes').checked?"index-light.css":"index-dark.css";
                                 localStorage.mode = colorMode;
