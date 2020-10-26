@@ -3,8 +3,9 @@ body {
 }
 
 #heading-text {
-    font-size: 6vw;
-	font-family: monospace;
+        
+        font-size: 6vw;
+        font-family: monospace;
 	text-shadow: 3px 3px red;
 }
 
@@ -20,8 +21,9 @@ h1 {
 */
 
 #unit {
-	margin-left: 5vw;
-	display: none;
+        
+        margin-left: 5vw;
+        display: none;
 }
 
 #searchBar {
@@ -40,6 +42,7 @@ h1 {
         box-shadow: 0 0 15px 1px purple ;
         padding-inline-start: 6px;
         font-size: 25px;
+        margin-left: 28.8%;
 }
 
 .btn.btn-danger {
