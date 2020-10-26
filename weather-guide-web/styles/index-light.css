@@ -36,7 +36,7 @@ h1 {
         color: white;
         font-weight: bolder;
         width: 60%;
-        margin-left: 5%;
+        margin-left: 2%;
         height: 40px;
         border-radius: 13px;
         box-shadow: 0 0 15px 1px purple ;
@@ -45,8 +45,7 @@ h1 {
 }
 
 .btn.btn-danger {
-  margin-right: 1vw;
-	margin: 3vw;
+  margin: 1vw;
 	border-radius: 20px;
 	border: 6px;
 	font-weight: bolder;
@@ -55,8 +54,7 @@ h1 {
 }
 
 .btn.btn-danger:hover {
-	margin-right: 1vw;
-	margin: 3vw;
+	margin: 1vw;
 	border-radius: 20px;
 	border: 6px;
 	font-weight: bolder;
@@ -66,7 +64,21 @@ h1 {
 }
 
 .toggle.btn.btn-success{
-	margin-left: 2vw;
+	margin-left: 14.5vw;
+}
+
+.toggle.btn.btn-warning{
+	margin-left: 1vw;
+}
+
+.toggle.btn.btn-dark{
+	margin-left: 1vw;
+}
+
+.toggle-handle.btn.btn-light{
+	
+	width: 2.3vw;
+	
 }
 
 .card {
@@ -74,9 +86,11 @@ h1 {
 	height: 95%; 
 	margin-top: 1.5%; 
 	margin-left: 5%;
-/* 	background-color: black;
-	color: whitesmoke; */
+	background-color: black;
+	color: whitesmoke;
 	font-size: x-large;
+	border-radius: 30px;
+	box-shadow: 0 0 15px 1px orangered ;
 }
 
 .card-img-top {
