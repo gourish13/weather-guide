@@ -18,7 +18,7 @@
         		<script src="../node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
                 <!-- /Bootstrap-toggle -->
 		
-                <link rel = "stylesheet" href = "./styles/index-light.css">
+                <link id = "color-mode" rel = "stylesheet" href = "./styles/index-light.css">
 
         </head>
 
@@ -29,6 +29,7 @@
                               //   weatherFetch('Asansol')
                          }
                 </script> -->
+                </script>
 
                 <script src = "./javascripts/tempconverter.js"></script>
                 <script src = "./javascripts/weathercard.js"></script>
@@ -42,7 +43,7 @@
                 </center>
                 
                 <input id = "unit" type = "checkbox" checked data-toggle = "toggle" data-on = "Celcius" data-off = "Fahrenheit" data-onstyle = "success" data-offstyle = "success">
-                <input id = "modes" type = "checkbox" checked data-toggle = "toggle" data-on = "Light-Mode" data-off = "Dark-Mode" data-onstyle = "warning" data-offstyle = "dark">
+                <input id = "modes" type = "checkbox" checked data-toggle = "toggle" data-on = "Light-Mode" data-off = "Dark-Mode" data-onstyle = "warning" data-offstyle = "dark" onchange = "changeColorMode()">
 
 
                 <!--ROUNDED TOGGLE-->
@@ -219,7 +220,19 @@
 
                 </div>
                 </div>
-
+                <script>
+                        function changeColorMode() {
+                                let colorMode = document.getElementById('modes').checked?"index-light.css":"index-dark.css";
+                                localStorage.mode = colorMode;
+                                document.getElementById('color-mode').href = './styles/' + colorMode;
+                        }
+                        // document.getElementById('modes').addEventListener('change', function() {
+                                // console.log(this.checked);
+                                // colorMode = this.checked?"index-light.css":"index-dark.css";
+                                // localStorage.mode = colorMode;
+                                // document.getElementById('color-mode').href = './styles/' + colorMode;
+                        // });
+                </script>
         </body>
 
 </html>
