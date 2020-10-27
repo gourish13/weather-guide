@@ -39,7 +39,7 @@
 
                 <center>
                         <input placeholder="City Name[,CC]" id = "searchBar"></input>
-                        <button class = "btn btn-danger" id = "searchButton">ADD CITY</button>
+                        <button class = "btn btn-danger" id = "searchButton" onclick="addCityCard()">ADD CITY</button>
                 </center>
                 
                 <input id = "unit" type = "checkbox" checked data-toggle = "toggle" data-on = "Celcius" data-off = "Fahrenheit" data-onstyle = "success" data-offstyle = "success" onchange = "convertAllTemp()">
@@ -109,10 +109,12 @@
                 </div>
                 </div>
                 <script>
-                        var apiData = [];
-                        const cards = document.getElementsByClassName('col-sm-3');
+                        var apiData;
+                        const cards;
                         function init(){
 
+                                apiData = [];
+                                cards = document.getElementsByClassName('col-sm-3');
                                 // setCardsIfAny();
                                 convertAllTemp();
                                 changeColorMode();
