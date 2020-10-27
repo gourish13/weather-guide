@@ -12,7 +12,6 @@ function celciusToFahrenheit(temp){
 
 function fahrenheitToCelcius(temp){
         return Math.round((temp - 32) * (5 / 9))
-        // ...
 }
 
 function convertAllTemp() {
@@ -29,6 +28,4 @@ function convertAllTemp() {
                 temp.innerHTML = celciusToFahrenheit(parseFloat(i)) + "°F"
 
         }
-        console.log(this)
-        // ...
 }
