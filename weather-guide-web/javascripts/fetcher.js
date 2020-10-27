@@ -15,6 +15,21 @@ function weatherFetch(cityName) {
                 })
 }
 
+function weatherFetchByCC(cityName , countryCode){
+
+        fetch(`https:\/\/cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${apiKey}`)
+                .then(function(res) {
+                        return res.json();
+                })
+                .then(function(data) {
+                        storeData(data);                
+                })
+                .catch(function(err) {
+                        console.log("Error in fetching weather data.")
+                        console.log(err);
+                })
+}
+
 function storeData(data) {
         weatherData = data
         console.log(weatherData)
