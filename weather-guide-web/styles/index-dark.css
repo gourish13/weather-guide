@@ -38,41 +38,48 @@ font-weight: bolder;
 	font-size: 25px;
 }
 
-.btn.btn-danger {
-margin: 1vw;
-border-radius: 20px;
-border: 6px;
-font-weight: bolder;
-box-shadow: 0 0 2px 2px royalblue;
-text-decoration-color: white
+#searchButton {
+  margin: 1vw;
+	border-radius: 20px;
+	border: 6px;
+	font-weight: bolder;
+	box-shadow: 0 0 2px 2px royalblue;
+	text-decoration-color: white
 }
 
-.btn.btn-danger:hover {
-margin: 1vw;
-border-radius: 20px;
-border: 6px;
-font-weight: bolder;
-background-color: darkcyan;
-box-shadow: 0 0 2px 2px red;
-text-decoration-color: white
+#searchButton:hover {
+	margin: 1vw;
+	border-radius: 20px;
+	border: 6px;
+	font-weight: bolder;
+	background-color: darkcyan;
+	box-shadow: 0 0 2px 2px red;
+	text-decoration-color: white
+}
+
+.btn.btn-danger  {
+	margin-left: 0.5vw;
 }
 
 .toggle.btn.btn-success{
-margin-left: 14.5vw;
+	margin-left: 2%;
+	margin-bottom: 2vw;
 }
 
 .toggle.btn.btn-warning{
-margin-left: 1vw;
+	margin-right: 2%;
+	float: right;
+	margin-bottom: 2vw;
 }
 
 .toggle.btn.btn-dark{
-margin-left: 1vw;
+	margin-right: 3%;
+	float: right;
+	margin-bottom: 2vw;
 }
 
 .toggle-handle.btn.btn-light{
-
 width: 2.3vw;
-
 }
 
 .card {
@@ -80,6 +87,7 @@ width: 90%;
 height: 95%; 
 margin-top: 1.5%; 
 margin-left: 5%;
+margin-bottom: 5%;
 font-size: x-large;
 border-radius: 30px;
 box-shadow: 0 0 15px 1px orangered ;

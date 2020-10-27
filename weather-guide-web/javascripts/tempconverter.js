@@ -1,10 +1,21 @@
-function toCelcius(tempInKelvin) {
-    return tempInKelvin - 273.15
+function kelvinToCelcius(tempInKelvin) {
+    return Math.round(tempInKelvin - 273.15);
 }
 
-function toFahrenheit(tempInKelvin) {
+function kelvinToFahrenheit(tempInKelvin) {
+    return Math.round((((tempInKelvin - 273.5) * (9 / 5)) + 32))
+}
 
-    let a = toCelcius(tempInKelvin)
-    return ((a * (9 / 5)) + 32)
+function celciusToFahrenheit(temp){
+        return kelvinToFahrenheit(273.15 + temp)
+}
 
+function fahrenheitToCelcius(temp){
+        // ...
+}
+
+function convertAllTemp() {
+        let temps = document.getElementsByClassName('temp')
+        console.log(temps)
+        // ...
 }

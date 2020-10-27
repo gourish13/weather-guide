@@ -38,22 +38,13 @@
                 <center><h1>☀⛅🌁<span id = "heading-text">WEATHER GUIDE</span>☔❄🌙</h1></center>
 
                 <center>
-                        <input placeholder="City Name[,Country Code]" id = "searchBar"></input>
+                        <input placeholder="City Name[,CC]" id = "searchBar"></input>
                         <button class = "btn btn-danger" id = "searchButton">ADD CITY</button>
                 </center>
                 
-                <input id = "unit" type = "checkbox" checked data-toggle = "toggle" data-on = "Celcius" data-off = "Fahrenheit" data-onstyle = "success" data-offstyle = "success">
+                <input id = "unit" type = "checkbox" checked data-toggle = "toggle" data-on = "Celcius" data-off = "Fahrenheit" data-onstyle = "success" data-offstyle = "success" onchange = "convertAllTemp()">
+                <!-- <div id = "note">NOTE : CC stands for Country Code, for example, IN -> India. Its optional and can be used as Mumbai,IN or Tokyo,JP and so on.</div> -->
                 <input id = "modes" type = "checkbox" checked data-toggle = "toggle" data-on = "Light-Mode" data-off = "Dark-Mode" data-onstyle = "warning" data-offstyle = "dark" onchange = "changeColorMode()">
-
-
-                <!--ROUNDED TOGGLE-->
-               <!--  <div class = "custom-control custom-switch">
-
-                        <input type = "checkbox" class = "custom-control-input" id = "customSwitches">
-                        <label class = "custom-control-label" for = "customSwitches">&#176C &nbsp; / &nbsp; &#176F</label>
-
-                </div> -->
-
 
                 <div class = "container-fluid">
                 <div class = "row">
@@ -67,8 +58,13 @@
                                         <div class = "card-body">
 
                                                 <h5 class = "card-title">London</h5>
-                                                <p class = "card-text">12&#176;C</p>
+                                                <p class = "card-text">
+                                                <span class="temp">12&#176;C</span>
+                                                <br>
+                                                Broken Clouds
+                                                </p>
                                                 <a href = "#" class = "btn btn-primary">Details</a>
+                                                <a href = "#" class = "btn btn-danger">Remove</a>
 
                                         </div>
 
@@ -221,10 +217,12 @@
                 </div>
                 </div>
                 <script>
+                        var apiData = [];
+                        const cards = document.getElementsByClassName('col-sm-3');
                         function init(){
 
-                                // document.getElementById('color-mode').href = './styles/' + localstorage.mode;
                                 changeColorMode();
+                                // setCardsIfAny();
 
                         }
                         
@@ -233,12 +231,6 @@
                                 localStorage.mode = colorMode;
                                 document.getElementById('color-mode').href = './styles/' + colorMode;
                         }
-                        // document.getElementById('modes').addEventListener('change', function() {
-                                // console.log(this.checked);
-                                // colorMode = this.checked?"index-light.css":"index-dark.css";
-                                // localStorage.mode = colorMode;
-                                // document.getElementById('color-mode').href = './styles/' + colorMode;
-                        // });
                 </script>
         </body>
 
