@@ -13,6 +13,9 @@
   "author": "Gourish Sadhu\\sadhu5gourish@outlook.com",
   "contributor": "Prasad Biswas\\prasad.biswasxiv@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "start": "node fun"
+  },
   "bugs": {
     "url": "https://github.com/gourish13/weather-guide/issues"
   },
@@ -21,6 +24,8 @@
     "bootstrap": "^4.5.3",
     "bootstrap4-toggle": "^3.6.1",
     "jquery": "^3.5.1",
+    "node-fetch": "^2.6.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "dependencies": {}
 }
