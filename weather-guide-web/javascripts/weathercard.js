@@ -1,6 +1,6 @@
 // Weather Card Template Generator
 
-function setCard() {
+function setCard(element) {
         let city = 'Asansol'
         let country = 'IN'
         let weatherCond = 'Clear'
@@ -17,4 +17,5 @@ function setCard() {
                 </div>
                 </div>`
         console.log(cardTemplate)
+        element.innerHTML = cardtemplate;
 }
