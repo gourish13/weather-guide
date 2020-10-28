@@ -24,7 +24,7 @@ function setCard(element, data) {
             <br>
             ${weatherCond}
             </p>
-            <button id = "details" class = "btn btn-primary" onclick = "showWeatherDetails('${city}')">
+            <button id = "details" class = "btn btn-primary" onclick = "showWeatherDetails('${city}', '${country}')">
             Details</button>
             <button id = "delete"  class = "btn btn-danger" 
             onclick = "removeWeatherCard(this.parentElement.parentElement.parentElement)">Remove</button>
