@@ -109,12 +109,16 @@
                 </div>
                 </div>
                 <script>
-                        var apiData;
+                        var cities;
                         var cards;
                         function init(){
 
-                                apiData = [];
+                                cities = [];
                                 cards = document.getElementsByClassName('col-sm-3');
+                                document.getElementById("searchBar").addEventListener('keyup', function(event) {
+                                                    if (event.key == 'Enter')
+                                                        addCityCard();
+                                            });
                                 // setCardsIfAny();
                                 convertAllTemp();
                                 changeColorMode();
@@ -123,7 +127,6 @@
                         
                         function changeColorMode() {
                                 let colorMode = document.getElementById('modes').checked?"index-light.css":"index-dark.css";
-                                localStorage.mode = colorMode;
                                 document.getElementById('color-mode').href = './styles/' + colorMode;
                         }
                 </script>

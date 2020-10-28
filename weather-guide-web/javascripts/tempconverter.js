@@ -17,6 +17,7 @@ function fahrenheitToCelcius(temp){
 function convertAllTemp() {
         let temps = document.getElementsByClassName('temp')
         let mode = document.getElementById("unit").checked
+        localStorage.isUnitCelcius = mode
         for(let temp of temps){
 
             console.log(temp)

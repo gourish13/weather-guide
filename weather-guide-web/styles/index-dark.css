@@ -99,3 +99,8 @@ color: whitesmoke;
 width: 39% ;
 margin-left: 29%;
 }
+
+img {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}

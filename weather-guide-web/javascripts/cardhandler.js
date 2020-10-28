@@ -8,6 +8,7 @@ function addCityCard() {
         }
 
         city = city.split(',')
+
         if(city.length > 2){
 
                 alert("Please Enter the Name of the City in the Provided Format...")
@@ -15,24 +16,14 @@ function addCityCard() {
 
         }
 
-        if(city.length==1)
-                weatherFetch(city[0].trim())
-        
-        else
-                weatherFetchByCC(city[0].trim() , city[1].trim())
+        if(city.length == 1) weatherFetch(city[0].trim())
+        else weatherFetchByCC(city[0].trim() , city[1].trim())
 
-        if(apiData.length == 8){
-
+        if(cities.length == 8){
                 alert("City Slots are full...Kindly remove one to open up a slot...")
                 return
-
         }
-
-        
-        let index = apiData.length;
-        
-        // Remove and start writing
-        setCard(cards[index])
-        
-        apiData[apiData.length] = 1;
+        // let index = cities.length;
+        // setCard(cards[index])
+        // cities[cities.length] = 1;
 }
