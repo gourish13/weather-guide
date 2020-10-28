@@ -35,11 +35,29 @@ function setCard(element, data) {
 }
 
 // Weather card button handler
-function showWeatherDetails(city) {
+function showWeatherDetails(city , country) {
     localStorage.currentCity = city;
-
+    localStorage.currcc = country;
+    window.location.assign("./weather.html");
 }
 
 function removeWeatherCard(card) {
-    console.log(card);
+    console.log(card === cards[0]);
+    let i = 0;
+    for(i=0 ; i<cities.length ; i++){
+
+        if(cards[i]===card) break;
+
+    }
+
+    for( ; i<cities.length ; i++){
+
+        cards[i].innerHTML = cards[i+1].innerHTML;
+        cities[i] = cities[i+1];
+
+    }
+    cities.pop();
+    cards[i].innerHTML = "";
+    localStorage.addedCity = cities;
+    console.log(cities);
 }
