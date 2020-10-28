@@ -27,3 +27,19 @@ function addCityCard() {
         // setCard(cards[index])
         // cities[cities.length] = 1;
 }
+
+function removeWeatherCard(card) {
+
+    let i = 0;
+    for(i=0 ; i<cities.length ; i++)
+        if(cards[i]===card) break;
+
+    for( ; i<cities.length - 1 ; i++){
+        cards[i].innerHTML = cards[i+1].innerHTML;
+        cities[i] = cities[i+1];
+    }
+
+    cities.pop();
+    cards[i].innerHTML = "";
+    localStorage.addedCity = cities;
+}
