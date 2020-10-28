@@ -33,7 +33,6 @@ function weatherFetch(cityName) {
 }
 
 function storeData(data) {
-        console.log(data)
         if (isAdded(data))
                 return
         setCard(cards[cities.length], data)
@@ -45,16 +44,16 @@ function storeData(data) {
 }
 
 function isAdded(data) {
-        for (let i in cities){
+        for (let i in cities)
                 if (cities[i][data.sys.country] == data.name){
                         showPresent(cards[i])
                         return true
                 }
-                else return false
-        }
+        return false
 }
 
 function showPresent(element) {
+        document.getElementById("searchBar").value = ''
         element.style.background = 'yellowgreen'
         setTimeout(function () {
                 element.style.background = 'blueviolet'

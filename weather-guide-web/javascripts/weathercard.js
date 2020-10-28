@@ -30,7 +30,6 @@ function setCard(element, data) {
             onclick = "removeWeatherCard(this.parentElement.parentElement.parentElement)">Remove</button>
             </div>
             </div>`
-        console.log(cardTemplate);
         element.innerHTML = cardTemplate;
 }
 

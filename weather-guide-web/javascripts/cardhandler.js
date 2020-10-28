@@ -29,7 +29,6 @@ function addCityCard() {
 }
 
 function removeWeatherCard(card) {
-
     let i = 0;
     for(i=0 ; i<cities.length ; i++)
         if(cards[i]===card) break;
@@ -41,19 +40,17 @@ function removeWeatherCard(card) {
 
     cities.pop();
     cards[i].innerHTML = "";
-    localStorage.addedCity = cities;
+    localStorage.addedCity = JSON.stringify(cities);
 }
 
 function setCardsIfAny(){
-
         cities = [];
         cards = document.getElementsByClassName('col-sm-3');
+        if (localStorage.addedCity === undefined || localStorage.addedCity === '')
+                return
         let citeh = JSON.parse(localStorage.addedCity);
         for(let i in citeh){
-
                 let cc = Object.keys(citeh[i]);
                 weatherFetchByCC(citeh[i][cc] , cc);
-
         }
-
 }
