@@ -43,3 +43,17 @@ function removeWeatherCard(card) {
     cards[i].innerHTML = "";
     localStorage.addedCity = cities;
 }
+
+function setCardsIfAny(){
+
+        cities = [];
+        cards = document.getElementsByClassName('col-sm-3');
+        let citeh = JSON.parse(localStorage.addedCity);
+        for(let i in citeh){
+
+                let cc = Object.keys(citeh[i]);
+                weatherFetchByCC(citeh[i][cc] , cc);
+
+        }
+
+}
