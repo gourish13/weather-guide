@@ -11,12 +11,11 @@ function weatherFetchByCC(cityName , countryCode){
                         storeData(data)             
                 })
                 .catch(function(err) {
-                        alert('Unable to fetch weather for unknown location, please recheck the requested city name and country code(CC)')
-                }).catch(function(err) {
                         console.log(err)
                         alert('Unable to fetch weather for unknown location, please recheck the requested city name and country code(CC)')
                 })
 }
+
 function weatherFetch(cityName) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
                 .then(function(res) {
