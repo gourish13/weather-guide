@@ -4,7 +4,10 @@ function forecastFetch(cityName , countryCode){
 
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${countryCode}&appid=${apiKey}`)
                 .then(function(res) {
-                        console.log(res.json()
+                        return res.json()
+                })
+                .then(function(data) {
+                        console.log(data)
                 })
                 .catch(function(err) {
                         console.log(err)
