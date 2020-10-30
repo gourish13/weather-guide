@@ -19,43 +19,47 @@
                 <!-- /Bootstrap-toggle -->
                 <link id = 'bg-img' rel = "stylesheet" href = "./styles/weather.css">
                 <script src="./javascripts/forecaster.js"></script>
+                <script src="./javascripts/details.js"></script>
+                <script src="./javascripts/tempconverter.js"></script>
         </head>
 
         <!-- <body style = "background-image: url(./images/snowy1.jpg); background-repeat: no-repeat; background-position: center; background-size: ;">
          -->
-        <body oncload = "setDetails()">
+        <body onload = "setDetails()">
       
+
+            <center class="mainTemp"><h1 id="city">City Name</h1> <h1 id="temperature">temp</h1></center>
 
             <table class = "tbl">
                 
                 <tr>
-                    <td id="attribute">Feels Like</td>
-                    <td id="value">Feels Like Value</td>
+                    <td class="attribute">Feels Like</td>
+                    <td class="value" id="feels">Feels Like Value</td>
                 </tr>
 
                 <tr>
-                    <td id="attribute">Minimum Temperature</td>
-                    <td id="value">Minimum Temp Value</td>
+                    <td class="attribute">Minimum Temperature</td>
+                    <td class="value" id="min">Minimum Temp Value</td>
                 </tr>
 
                 <tr>
-                    <td id="attribute">Maximum Temperature</td>
-                    <td id="value">Maximum Temp Value</td>
+                    <td class="attribute">Maximum Temperature</td>
+                    <td class="value" id="max">Maximum Temp Value</td>
                 </tr>
 
                 <tr>
-                    <td id="attribute">Pressure</td>
-                    <td id="value">Pressure Value</td>
+                    <td class="attribute">Pressure</td>
+                    <td class="value" id="press">Pressure Value</td>
                 </tr>
 
                 <tr>
-                    <td id="attribute">Humidity</td>
-                    <td id="value">Humidity Value</td>
+                    <td class="attribute">Humidity</td>
+                    <td class="value" id="hum">Humidity Value</td>
                 </tr>
 
                 <tr>
-                    <td id="attribute">Wind Speed</td>
-                    <td id="value">Wind Speed Value</td>
+                    <td class="attribute">Wind Speed</td>
+                    <td class="value" id="wind">Wind Speed Value</td>
                 </tr>
 
 

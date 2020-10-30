@@ -22,6 +22,7 @@ function weatherFetch(cityName , countryCode){
                 })
                 .then(function(data) {
                         console.log(data)
+                        writeData(data)
                 })
                 .catch(function(err) {
                         console.log(err)
