@@ -6,3 +6,39 @@ body {
 	background-image: url('../images/clear.jpg');
 }
 
+table{
+
+	width: 60%;
+	margin-top: 180px;
+	border: 2px solid darkred;
+	margin-bottom: 80px;
+
+}
+
+table.tbl{
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+td{
+
+	padding: 1%;
+	font-size: 25px;
+	border-right: 2px solid darkred;
+
+}
+
+#attribute{
+
+	font-weight: bold;
+	text-align: left;
+
+}
+
+#value{
+
+	text-align: center;
+
+}

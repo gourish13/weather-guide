@@ -13,3 +13,18 @@ function forecastFetch(cityName , countryCode){
                         console.log(err)
                })
 }
+
+function weatherFetch(cityName , countryCode){
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${apiKey}`)
+                .then(function(res) {
+                        return res.json()
+                })
+                .then(function(data) {
+                        console.log(data)
+                })
+                .catch(function(err) {
+                        console.log(err)
+               })
+
+}
