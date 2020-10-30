@@ -30,7 +30,7 @@ function writeData(data){
 
     }
     document.getElementById("press").innerHTML = data.main.pressure + " hPa";
-    document.getElementById("hum").innerHTML = data.main.humidity + "";
-    document.getElementById("wind").innerHTML = data.wind.speed + " Knot";
+    document.getElementById("hum").innerHTML = data.main.humidity + "%";
+    document.getElementById("wind").innerHTML = data.wind.speed + " m/s";
 
 }
