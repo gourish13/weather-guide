@@ -20,6 +20,7 @@
   "devDependencies": {
     "bootstrap": "^4.5.3",
     "bootstrap4-toggle": "^3.6.1",
+    "chart.js": "^2.9.4",
     "jquery": "^3.5.1",
     "node-fetch": "^2.6.1",
     "popper.js": "^1.16.1"
