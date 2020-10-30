@@ -4,7 +4,7 @@
   "description": "A simple weather forecasting app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node fun"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,6 @@
   "author": "Gourish Sadhu\\sadhu5gourish@outlook.com",
   "contributor": "Prasad Biswas\\prasad.biswasxiv@gmail.com",
   "license": "MIT",
-  "scripts": {
-    "start": "node fun"
-  },
   "bugs": {
     "url": "https://github.com/gourish13/weather-guide/issues"
   },
