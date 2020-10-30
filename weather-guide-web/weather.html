@@ -28,45 +28,47 @@
         <body onload = "setDetails()">
       
 
-            <center class="mainTemp"><h1 id="city">City Name</h1> <h1 id="temperature">temp</h1></center>
+            <center class="mainTemp"><h1><span id = "city">City Name </span>&nbsp;&nbsp;<span id = "cond">Weather Condition</span>&nbsp;&nbsp;<span id = "temp">temp</span></h1></center>
 
             <table class = "tbl">
                 
                 <tr>
                     <td class="attribute">Feels Like</td>
-                    <td class="value" id="feels">Feels Like Value</td>
+                    <td class="value" id="feels"></td>
                 </tr>
 
                 <tr>
                     <td class="attribute">Minimum Temperature</td>
-                    <td class="value" id="min">Minimum Temp Value</td>
+                    <td class="value" id="min"></td>
                 </tr>
 
                 <tr>
                     <td class="attribute">Maximum Temperature</td>
-                    <td class="value" id="max">Maximum Temp Value</td>
+                    <td class="value" id="max"></td>
                 </tr>
 
                 <tr>
                     <td class="attribute">Pressure</td>
-                    <td class="value" id="press">Pressure Value</td>
+                    <td class="value" id="press"></td>
                 </tr>
 
                 <tr>
                     <td class="attribute">Humidity</td>
-                    <td class="value" id="hum">Humidity Value</td>
+                    <td class="value" id="hum"></td>
                 </tr>
 
                 <tr>
                     <td class="attribute">Wind Speed</td>
-                    <td class="value" id="wind">Wind Speed Value</td>
+                    <td class="value" id="wind"></td>
                 </tr>
 
 
             </table>
 
 
-            <button class = "btn btn-primary btn-circle btn-sm" id = "tsetB" style = "border-radius: 50%; font-size: 20px; background-color: red;">&larr;</button>
+           <!--  <button class = "btn btn-primary btn-circle btn-sm" id = "tsetB" style = "border-radius: 50%; font-size: 20px; background-color: red;">&larr;</button> -->
+
+           <canvas id = "chart"></canvas>
 
         </body>
 </html>
