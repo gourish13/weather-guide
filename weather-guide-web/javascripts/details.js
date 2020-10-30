@@ -3,7 +3,7 @@ function setDetails(){
     let con = localStorage.currcc;
     let cit = localStorage.currentCity;
     weatherFetch(cit, con);
-
+    renderChart();
 } 
 
 function writeData(data){
