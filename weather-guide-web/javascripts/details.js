@@ -9,9 +9,12 @@ function setDetails(){
 function writeData(data){
 
     console.log("hola");
+
+    document.getElementById("city").innerHTML = localStorage.currentCity;
+    document.getElementById("cond").innerHTML = data.weather[0].description;
+
     if(localStorage.isUnitCelcius){
 
-        document.getElementById("city").innerHTML = localStorage.currentCity;
         document.getElementById("temperature").innerHTML = kelvinToCelcius(data.main.temp) + "°C";
         document.getElementById("feels").innerHTML = kelvinToCelcius(data.main.feels_like) + "°C";
         document.getElementById("min").innerHTML = kelvinToCelcius(data.main.temp_min) + "°C";
@@ -20,7 +23,6 @@ function writeData(data){
     }
     else{
 
-        document.getElementById("city").innerHTML = localStorage.currentCity;
         document.getElementById("temperature").innerHTML = kelvinToFahrenheit(data.main.temp) + "°F";
         document.getElementById("feels").innerHTML = kelvinToFahrenheit(data.main.feels_like) + "°F";
         document.getElementById("min").innerHTML = kelvinToFahrenheit(data.main.temp_min) + "°F";
@@ -29,6 +31,6 @@ function writeData(data){
     }
     document.getElementById("press").innerHTML = data.main.pressure + " hPa";
     document.getElementById("hum").innerHTML = data.main.humidity + "";
-    document.getElementById("wind").innerHTML = data.wind.speed + "Knot";
+    document.getElementById("wind").innerHTML = data.wind.speed + " Knot";
 
 }
