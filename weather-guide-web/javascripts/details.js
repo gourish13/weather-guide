@@ -9,6 +9,7 @@ function setDetails(){
 function writeData(data){
 
     document.getElementById("city").innerHTML = localStorage.currentCity;
+    document.getElementById("cc").innerHTML = localStorage.currcc;
     document.getElementById("cond").innerHTML = data.weather[0].description;
     if(Number(localStorage.isUnitCelcius)) {
 
