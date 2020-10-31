@@ -44,12 +44,24 @@ td{
 }
 
 .mainTemp{
-
+	margin: 3vw;
 	font-style: monospace;
 	color: white;
 	text-shadow: 2px 2px blue;
 	font-weight: bolder;
 
+}
+
+h1 a {
+	text-decoration: none;
+	color:#D8E4FC;
+}
+
+h1 a:hover{
+	background-color:#D8E4FC;
+	text-decoration: none;
+	color:navy;
+	border-radius: 500px;
 }
 
 .mainChart{
