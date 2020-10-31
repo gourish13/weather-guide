@@ -18,5 +18,13 @@ function organizeData(data) {
         minn.push(Math.min.apply(null , temps[i]))
 
     }
+    if (localStorage.isUnitCelcius) { 
+        maxx = maxx.map(kelvinToCelcius)
+        minn = minn.map(kelvinToCelcius)
+    }
+    else {
+        maxx = maxx.map(kelvinToFahrenheit)
+        minn = minn.map(kelvinToFahrenheit)
+    }
     renderChart(dates , maxx , minn);
 }
