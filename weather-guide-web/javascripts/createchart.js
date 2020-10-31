@@ -5,14 +5,14 @@ function renderChart(dates , maxx , minn) {
 		data: {
 			labels: dates,
 			datasets: [{
-				label: 'MAXIMUM TEMPERATURE',
+				label: 'MAX TEMP',
 				data: maxx,
 				backgroundColor: 'transparent',
 				borderColor: 'red',
 				borderWidth: 2
 			},
 			{
-				label: 'MINIMUM TEMPERATURE',
+				label: 'MIN TEMPER',
 				data: minn,
 				backgroundColor: 'transparent',
 				borderColor: 'green',
