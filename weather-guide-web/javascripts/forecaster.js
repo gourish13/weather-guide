@@ -8,6 +8,7 @@ function forecastFetch(cityName , countryCode){
                 })
                 .then(function(data) {
                         console.log(data)
+                        organizeData(data)
                 })
                 .catch(function(err) {
                         console.log(err)
