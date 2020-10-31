@@ -12,7 +12,7 @@ function renderChart(dates , maxx , minn) {
 				borderWidth: 2
 			},
 			{
-				label: 'MIN TEMPER',
+				label: 'MIN TEMP',
 				data: minn,
 				backgroundColor: 'transparent',
 				borderColor: 'green',

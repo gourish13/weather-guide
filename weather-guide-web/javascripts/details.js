@@ -8,12 +8,9 @@ function setDetails(){
 
 function writeData(data){
 
-    console.log("hola");
-
     document.getElementById("city").innerHTML = localStorage.currentCity;
     document.getElementById("cond").innerHTML = data.weather[0].description;
-
-    if(localStorage.isUnitCelcius){
+    if(Number(localStorage.isUnitCelcius)) {
 
         document.getElementById("temperature").innerHTML = kelvinToCelcius(data.main.temp) + "°C";
         document.getElementById("feels").innerHTML = kelvinToCelcius(data.main.feels_like) + "°C";
@@ -21,7 +18,7 @@ function writeData(data){
         document.getElementById("max").innerHTML = kelvinToCelcius(data.main.temp_max) + "°C";
 
     }
-    else{
+    else {
 
         document.getElementById("temperature").innerHTML = kelvinToFahrenheit(data.main.temp) + "°F";
         document.getElementById("feels").innerHTML = kelvinToFahrenheit(data.main.feels_like) + "°F";

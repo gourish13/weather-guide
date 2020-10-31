@@ -18,7 +18,7 @@ function organizeData(data) {
         minn.push(Math.min.apply(null , temps[i]))
 
     }
-    if (localStorage.isUnitCelcius) { 
+    if (Number(localStorage.isUnitCelcius == true)) { 
         maxx = maxx.map(kelvinToCelcius)
         minn = minn.map(kelvinToCelcius)
     }

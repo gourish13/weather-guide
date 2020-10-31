@@ -17,12 +17,10 @@ function fahrenheitToCelcius(temp){
 function convertAllTemp() {
         let temps = document.getElementsByClassName('temp')
         let mode = document.getElementById("unit").checked
-        localStorage.isUnitCelcius = mode
+        localStorage.isUnitCelcius = Number(mode)
         for(let temp of temps){
 
-            console.log(temp)
             let i = temp.innerHTML.split('°')[0]
-            console.log(i)
             if(mode)
                 temp.innerHTML = fahrenheitToCelcius(parseFloat(i)) + "°C"
             else

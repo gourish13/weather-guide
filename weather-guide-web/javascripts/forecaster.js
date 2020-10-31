@@ -7,7 +7,6 @@ function forecastFetch(cityName , countryCode){
                         return res.json()
                 })
                 .then(function(data) {
-                        console.log(data)
                         organizeData(data)
                 })
                 .catch(function(err) {
@@ -22,7 +21,6 @@ function weatherFetch(cityName , countryCode){
                         return res.json()
                 })
                 .then(function(data) {
-                        console.log(data)
                         writeData(data)
                 })
                 .catch(function(err) {
