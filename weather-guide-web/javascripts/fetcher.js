@@ -1,6 +1,6 @@
 function weatherFetchByCC(cityName , countryCode){
 
-        fetch(`http://localhost:3000/weather?city=${cityName},${countryCode}`)
+        fetch(`https://fetcherapi.herokuapp.com/weather?city=${cityName},${countryCode}`)
                 .then(function(res) {
                         return res.json()
                 })
@@ -15,7 +15,7 @@ function weatherFetchByCC(cityName , countryCode){
 }
 
 function weatherFetch(cityName) {
-        fetch(`http://localhost:3000/weather?city=${cityName}`)
+        fetch(`https://fetcherapi.herokuapp.com/weather?city=${cityName}`)
                 .then(function(res) {
                         return res.json()
                 })
