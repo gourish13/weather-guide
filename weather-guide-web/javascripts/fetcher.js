@@ -1,6 +1,6 @@
 function weatherFetchByCC(cityName , countryCode){
 
-        fetch(`http://localhost:3000/weather?q=${cityName},${countryCode}`)
+        fetch(`http://localhost:3000/weather?city=${cityName},${countryCode}`)
                 .then(function(res) {
                         return res.json()
                 })
@@ -15,7 +15,7 @@ function weatherFetchByCC(cityName , countryCode){
 }
 
 function weatherFetch(cityName) {
-        fetch(`http://localhost:3000/weather?q=${cityName}`)
+        fetch(`http://localhost:3000/weather?city=${cityName}`)
                 .then(function(res) {
                         return res.json()
                 })

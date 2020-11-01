@@ -1,6 +1,6 @@
 function forecastFetch(cityName , countryCode){
 
-        fetch(`http://localhost:3000/forecast?q=${cityName},${countryCode}`)
+        fetch(`http://localhost:3000/forecast?city=${cityName},${countryCode}`)
                 .then(function(res) {
                         return res.json()
                 })
