@@ -1,8 +1,6 @@
-const apiKey = "656fc6ced8b49f7b5d51f8e68d78e400"
-
 function weatherFetchByCC(cityName , countryCode){
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${apiKey}`)
+        fetch(`http://localhost:3000/weather?q=${cityName},${countryCode}`)
                 .then(function(res) {
                         return res.json()
                 })
@@ -17,7 +15,7 @@ function weatherFetchByCC(cityName , countryCode){
 }
 
 function weatherFetch(cityName) {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
+        fetch(`http://localhost:3000/weather?q=${cityName}`)
                 .then(function(res) {
                         return res.json()
                 })
