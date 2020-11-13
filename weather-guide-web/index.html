@@ -20,7 +20,7 @@
         		<script src="../node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
                 <!-- /Bootstrap-toggle -->
 		
-                <link id = "color-mode" rel = "stylesheet" href = "./styles/index-light.css">
+                <link id = "color-mode" rel = "stylesheet" href = "./styles/index-dark.css">
 
         </head>
 
@@ -114,6 +114,7 @@
                         var cities;
                         var cards;
                         function init(){
+                                document.getElementById('color-mode').href = './styles/index-light.css';
                                 document.getElementById("searchBar").value = '';
                                 if (localStorage.isUnitCelcius != undefined)
                                     if (Number(localStorage.isUnitCelcius)) {

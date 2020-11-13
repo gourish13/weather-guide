@@ -1,5 +1,6 @@
 function renderChart(dates, maxx, minn) {
 	const ctx = document.getElementById('chart').getContext('2d');
+        Chart.defaults.global.responsive = true;
 	const chart = new Chart(ctx, {
 		type: 'line',
 		data: {
@@ -20,6 +21,11 @@ function renderChart(dates, maxx, minn) {
 			}]
 		},
 		options: {
+                        legend: {
+                                labels: {
+                                        fontColor: 'white'
+                                }
+                        },
 			tooltips: {
 				callbacks: {
 					label: function(tooltipitem) {
@@ -33,6 +39,7 @@ function renderChart(dates, maxx, minn) {
 			title: {
 				display: true,
 				text: 'Max and Min temp forecast for 5 days',
+                                fontColor: 'gray',
 				position: 'bottom'
 			},
 			scales: {
