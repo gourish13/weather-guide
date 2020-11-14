@@ -26,12 +26,6 @@
 
         <body onload = "init()"> 
                 <script src="./javascripts/fetcher.js"></script>
-                <!-- <script>
-                         function showFetchedData() {  
-                              //   weatherFetch('Asansol')
-                         }
-                </script> -->
-                </script>
 
                 <script src = "./javascripts/tempconverter.js"></script>
                 <script src = "./javascripts/weathercard.js"></script>
@@ -135,13 +129,27 @@
                                                         addCityCard();
                                             });
                                 convertAllTemp();
-                                changeColorMode();
 
+                                if (localStorage.color != undefined)
+                                        if (localStorage.color === "light") {
+                                                document.getElementById('modes').checked = true;
+                                                const colorToggle = document.getElementsByClassName("toggle btn btn-dark off")[0]
+                                                if (colorToggle != undefined)
+                                                        colorToggle.className = "toggle btn btn-warning";
+                                        }
+                                        else {
+                                                document.getElementById('modes').checked = false;
+                                                const colorToggle = document.getElementsByClassName("toggle btn btn-warning")[0]
+                                                if (colorToggle != undefined)
+                                                        colorToggle.className = "toggle btn btn-dark off";
+                                        }
+                                changeColorMode();
                         }
                         
                         function changeColorMode() {
                                 let colorMode = document.getElementById('modes').checked?"index-light.css":"index-dark.css";
                                 document.getElementById('color-mode').href = './styles/' + colorMode;
+                                localStorage.color = document.getElementById('modes').checked?"light":"dark";
                         }
                 </script>
         </body>
