@@ -6,7 +6,7 @@
                 
                 <title>Details | Weather Guide</title>
 
-                <link rel = "shortcut icon" type = "image/png" href = "images/favicon.png">
+                <link rel = "shortcut icon" type = "image/png" href = "./images/favicon.png">
 		
 		<!-- Bootstrap -->
                 <link rel = "stylesheet" href = "../node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -17,10 +17,6 @@
 
                 <script src = '../node_modules/chart.js/dist/Chart.js'></script>
 
-		<!-- Bootstrap-toggle -->
-        		<link href="../node_modules/bootstrap4-toggle/css/bootstrap4-toggle.min.css" rel="stylesheet">
-        		<script src="../node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
-        <!-- /Bootstrap-toggle -->
                 <link id = 'bg-img' rel = "stylesheet" href = "./styles/weather.css">
                 <script src="./javascripts/forecaster.js"></script>
                 <script src="./javascripts/details.js"></script>
@@ -31,6 +27,15 @@
 
         <body onload = "setDetails()">
       
+            <div class = "overlay phone"></div>
+            <div class = "modal-area phone">
+
+                    <img src = "./images/rotate-device.gif">
+
+                    <p>
+                        Rotate your device
+                    </p>
+            </div>
 
             <h1 class="mainTemp"><a href="./index.html">&larr;</a>&nbsp;&nbsp;&nbsp;&nbsp;<span id = "city">City Name </span>,<span id="cc">Country Code</span>&nbsp;&nbsp;<span id = "cond">Weather Condition</span>&nbsp;&nbsp;<span id = "temperature">temp</span></h1>
 
