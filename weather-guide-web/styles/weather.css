@@ -113,7 +113,7 @@ h1 a:hover{
         font-size: 5vw;
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 666px) {
         .overlay {
                 display: block;
         }
