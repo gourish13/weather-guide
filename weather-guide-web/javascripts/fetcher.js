@@ -51,7 +51,8 @@ function isAdded(data) {
 
 function showPresent(element) {
         document.getElementById("searchBar").value = ''
-        element.style.background = 'yellowgreen'
+        element.style.background = 'yellow'
+        window.location.hash = "#" + element.id
         setTimeout(function () {
                 element.style.background = 'blueviolet'
         }, 3000)
