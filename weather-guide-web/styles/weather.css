@@ -57,14 +57,14 @@ h1 {
 
 h1 a {
 	text-decoration: none;
-	color:#D8E4FC;
+	color: #D8E4FC;
 }
 
 h1 a:hover{
 	background-color:#D8E4FC;
 	text-decoration: none;
 	color: navy;
-	border-radius: 500px;
+	border-radius: 50%;
 }
 
 .mainChart{
